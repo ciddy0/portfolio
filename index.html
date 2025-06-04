@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Diego Cid Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <nav>
+        <div class="logo-box">
+            <img src="assets/kitty.png" alt="logo" class="logo-img">
+        </div>
+        <ul>
+            <li><a href="#about" class="nav-link">About me</a></li>
+            <li><a href=#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+        </ul>
+        <button class="contact-btn">Contact me</button>
+    </nav>
+
+    <section id="about" class="centered">
+        <img src="assets/chopper_sitting.jpg" alt="profile" class="avatar"/>
+        <h2>Diego Cid, Computer Science Senior @<br/>California State University Long Beach</h2>
+    </section>
+
+    <section id="projects">
+        <div class="filters">
+            <h3>Filters</h3>
+            <label><input type="checkbox" value="Recent"/> Recent</label>
+            <label><input type="checkbox" value="Python"/> Python</label>
+            <label><input type="checkbox" value="C#"/> C#</label>
+            <label><input type="checkbox" value="C++"/> C++</label>
+            <label><input type="checkbox" value="Javascript"/> Javascript</label>
+            <label><input type="checkbox" value="Java"/> Java</label>
+        </div>
+        <div class="project-list" id="project-list"></div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
