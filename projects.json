@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Chess",
+    "description": "A chess application using Avalonia where the user can play against an AI",
+    "technologies": ["C#"],
+    "image": "assets/chess.png",
+    "date": "2025-04-15"
+  },
+  {
+    "title": "Casino Render",
+    "description": "Uses computer graphics techniques to render a casino and add physics to dice",
+    "technologies": ["C++"],
+    "image": "assets/casino-render.png",
+    "date": "2025-05-12"
+  },
+  {
+    "title": "BRFSS Data Analysis",
+    "description": "Performed ETL on a 104,000-record dataset using Python, Pandas, Scikit-learn, and Matplotlib to find patterns.",
+    "technologies": ["Python"],
+    "image": "assets/brfss.png",
+    "date": "2025-03-01"
+  },
+  {
+    "title": "Khrave",
+    "description": "A full-stack web app to share and discover unique custom food orders.",
+    "technologies": ["Javascript"],
+    "image": "assets/khrave.png",
+    "date": "2024-10-20"
+  },
+  {
+    "title": "Anime Recommender",
+    "description": "A webapp to recommend users anime using machine learning",
+    "technologies": ["Python", "Javascript"],
+    "image": "assets/anime-recommender.png",
+    "date": "2024-09-01"
+  },
+  {
+    "title": "Beach Buddy",
+    "description": "A discord bot to notify users of University course registration updates",
+    "technologies": ["Python"],
+    "image": "assets/beach-buddy.png",
+    "date": "2024-05-01"
+  },
+  {
+    "title": "Wild Rift Bot",
+    "description": "A discord bot to allow users to search for in-game stats and info",
+    "technologies": ["Java"],
+    "image": "assets/wildrift-bot.png",
+    "date": "2022-12-01"
+  }
+]
