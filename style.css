@@ -90,6 +90,10 @@ nav ul li {
     transition: all 0.3s;
     margin-top: 10px;
 }
+a.contact-btn {
+  color: #000;
+  text-decoration: none;
+}
 
 .contact-btn:hover {
     background: #000;
