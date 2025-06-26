@@ -246,13 +246,13 @@ a.contact-btn {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 1.5rem;
 }
 
 .form-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-gap: 40px; 
+    grid-gap: 3rem; 
 }
 
 .contact-form input,
@@ -398,4 +398,8 @@ a.contact-btn {
         overflow: visible;
         padding-right: 0;
     }
+    .form-row {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
 }
