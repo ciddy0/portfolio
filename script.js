@@ -48,10 +48,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const menu     = document.getElementById('mobile-menu');
-  const openBtn  = document.getElementById('hamburger-btn');
-  const closeBtn = document.getElementById('close-btn');
-
+    const menu     = document.getElementById('mobile-menu');
+    const openBtn  = document.getElementById('hamburger-btn');
+    const closeBtn = document.getElementById('close-btn');
   openBtn.addEventListener('click', () => {
     menu.classList.add('open');
   });
@@ -59,5 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
   closeBtn.addEventListener('click', () => {
     menu.classList.remove('open');
   });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const menu = document.getElementById('mobile-menu');
+    const links = menu.querySelectorAll('a.nav-link, .contact-mobile a');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+        menu.classList.remove('open');
+        });
+    });
 });
 
