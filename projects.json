@@ -9,7 +9,7 @@
   },
   {
     "title": "Club World Cup Data Lake",
-    "description": "A data pipeline for the Fifa Club World Cup 2025",
+    "description": "A data pipeline for the Fifa Club World Cup 2025. Used Apache airflow to schedule task for extracting, transforming and loading the data.",
     "technologies": ["Python"],
     "image": "assets/cwc.png",
     "date": "2025-06-25",
