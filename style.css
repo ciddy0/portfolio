@@ -272,9 +272,12 @@ a.contact-btn {
 .contact-form textarea::placeholder {
     color: #333;
 }
-
+.close-btn, .submit-btn {
+  all: unset;              
+  cursor: pointer;
+}
 .submit-btn {
-    -webkit-appearance: none;
+    display: inline-block;
     align-self: flex-start;
     border: 2px solid #000;
     border-radius: 10px;
@@ -345,7 +348,6 @@ a.contact-btn {
 }
 
 .close-btn {
-    -webkit-appearance: none;
     background: none;
     border: none;
     font-size: 2rem;
