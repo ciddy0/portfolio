@@ -9,17 +9,35 @@
 </head>
 <body>
     <nav>
-        <div class="logo-box">
-            <img src="assets/kitty.png" alt="logo" class="logo-img">
-        </div>
+        <button id="hamburger-btn" class="hamburger" aria-label="Toggle menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
         <ul>
+            <li class="logo-item"><a href="#top"><img src="assets/kitty.png" alt="logo" class="logo-box logo-img"/></a></li>
+            <li><a href="#about"   class="nav-link">About me</a></li>
+            <li><a href="#projects"class="nav-link">Projects</a></li>
+            <li><a href="#skills"  class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="contact-btn">Contact me</a></li>
+        </ul>
+    </nav>
+    <!-- My HAMBURGER MENU HEHE-->
+     <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-header">
+            <button id="close-btn" class="close-btn" aria-label="Close menu">&times;</button>
+            <div class="logo-box">
+                <img src="assets/kitty.png" alt="logo" class="logo-img">
+            </div>        </div>
+        <ul class="mobile-menu-nav">
             <li><a href="#about" class="nav-link">About me</a></li>
             <li><a href="#projects" class="nav-link">Projects</a></li>
             <li><a href="#skills" class="nav-link">Skills</a></li>
         </ul>
-        <a href="#contact" class="contact-btn">Contact me</a>
-    </nav>
-
+        <div class="contact-mobile">
+            <a href="#contact" class="contact-btn">Contact me</a>
+        </div>
+     </div>
     <section id="about" class="centered">
         <img src="assets/chopper_sitting.jpg" alt="profile" class="avatar"/>
         <h2>Diego Cid, Computer Science Senior @<br/>California State University Long Beach</h2>
@@ -42,59 +60,24 @@
         <h2>Skills</h2>
         <div class="skills-grid">
             <div class="skill-item">
-            <img src="assets/python-logo.png" alt="Python" class="skill-icon"/>
-            <span class="skill-name">Python</span>
-            <div class="skill-rating">
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-filled.png" alt="★"/>
-            </div>
+                <img src="assets/python-logo.png" alt="Python" class="skill-icon"/>
+                <span class="skill-name">Python</span>
             </div>
             <div class="skill-item">
-            <img src="assets/csharp-logo.png" alt="C#" class="skill-icon"/>
-            <span class="skill-name">C#</span>
-            <div class="skill-rating">
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-empty.png"  alt="☆"/>
-            </div>
+                <img src="assets/csharp-logo.png" alt="C#" class="skill-icon"/>
+                <span class="skill-name">C#</span>
             </div>
             <div class="skill-item">
-            <img src="assets/c++-logo.png" alt="C++" class="skill-icon"/>
-            <span class="skill-name">C++</span>
-            <div class="skill-rating">
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-empty.png"  alt="☆"/>
-                <img src="assets/star-empty.png"  alt="☆"/>
-            </div>
+                <img src="assets/c++-logo.png" alt="C++" class="skill-icon"/>
+                <span class="skill-name">C++</span>
             </div>
             <div class="skill-item">
-            <img src="assets/javascript-logo.png" alt="JavaScript" class="skill-icon"/>
-            <span class="skill-name">JavaScript</span>
-            <div class="skill-rating">
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-empty.png"  alt="☆"/>
-                <img src="assets/star-empty.png"  alt="☆"/>
-            </div>
+                <img src="assets/javascript-logo.png" alt="JavaScript" class="skill-icon"/>
+                <span class="skill-name">JavaScript</span>
             </div>
             <div class="skill-item">
-            <img src="assets/java-logo.png" alt="Java" class="skill-icon"/>
-            <span class="skill-name">Java</span>
-            <div class="skill-rating">
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-filled.png" alt="★"/>
-                <img src="assets/star-empty.png"  alt="☆"/>
-                <img src="assets/star-empty.png"  alt="☆"/>
-                <img src="assets/star-empty.png"  alt="☆"/>
-            </div>
+                <img src="assets/java-logo.png" alt="Java" class="skill-icon"/>
+                <span class="skill-name">Java</span>
             </div>
         </div>
     </section>

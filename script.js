@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", async () => {
             const card = document.createElement("div");
             card.className = "project-card";
             card.innerHTML = `
-            <img src="${project.image}" alt="${project.title}" />
-            <h4><strong>${project.title}</strong></h4>
-            <p>${project.description}</p>
+                <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <img src="${project.image}" alt="${project.title}"/>
+                    <h4><strong>${project.title}</strong></h4>
+                    <p>${project.description}</p>
+                </a>
             `;
             projectList.appendChild(card);
         });
@@ -44,3 +46,18 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     renderProjects(projects); // Initial render
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menu     = document.getElementById('mobile-menu');
+  const openBtn  = document.getElementById('hamburger-btn');
+  const closeBtn = document.getElementById('close-btn');
+
+  openBtn.addEventListener('click', () => {
+    menu.classList.add('open');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    menu.classList.remove('open');
+  });
+});
+
