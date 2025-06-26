@@ -9,7 +9,7 @@
   },
   {
     "title": "Club World Cup Data Lake",
-    "description": "A data pipeline for the Fifa Club World Cup 2025. Used Apache airflow to schedule task for extracting, transforming and loading the data.",
+    "description": "A data pipeline for the Fifa Club World Cup 2025. Used Apache airflow to schedule task for extracting, transforming and loading the data",
     "technologies": ["Python"],
     "image": "assets/cwc.png",
     "date": "2025-06-25",
@@ -25,7 +25,7 @@
   },
   {
     "title": "BRFSS Data Analysis",
-    "description": "Performed ETL on a 104,000-record dataset using Python, Pandas, Scikit-learn, and Matplotlib to find patterns.",
+    "description": "Performed ETL on a 104,000-record dataset using Python, Pandas, Scikit-learn, and Matplotlib to find patterns",
     "technologies": ["Python"],
     "image": "assets/brfss.png",
     "date": "2025-03-01",
@@ -33,7 +33,7 @@
   },
   {
     "title": "Khrave",
-    "description": "A full-stack web app to share and discover unique custom food orders.",
+    "description": "A full-stack web app to share and discover unique custom food orders",
     "technologies": ["Javascript"],
     "image": "assets/khrave.png",
     "date": "2024-10-20",
