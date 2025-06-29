@@ -13,9 +13,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-top: 3rem;
 }
 .logo-box{
@@ -37,11 +36,14 @@ nav {
 }
 
 nav ul {
+    padding-left: 5rem;
+    padding-right: 5rem;
     display: flex;
+    width: 1000%;
     list-style: none;
-    gap: 100px;
-    padding: 0;
-    margin: 0 auto;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul li {
@@ -382,7 +384,7 @@ a.contact-btn {
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .hamburger {
         display: flex;
     }
