@@ -69,3 +69,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const logos = Array.from(
+        document.querySelectorAll("#logo, #mobile-logo")
+    );
+
+    const darkSaved = localStorage.getItem("dark") === "true";
+    if (darkSaved) {
+        document.body.classList.add("dark-mode");
+        logos.forEach(img => img.src = img.dataset.darkSrc);
+    }
+
+    logos.forEach(img =>
+        img.addEventListener("click", e => {
+        e.preventDefault();
+        const nowDark = document.body.classList.toggle("dark-mode");
+        localStorage.setItem("dark", nowDark);
+        logos.forEach(i =>
+            i.src = nowDark ? i.dataset.darkSrc : i.dataset.lightSrc
+        );
+        })
+    );
+});
