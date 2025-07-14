@@ -214,6 +214,8 @@ a.contact-btn {
     visibility: visible;
 }
 .modal-content {
+    max-height: calc(100vh -2rem);
+    overflow-y: auto;
     background: var(--card-bg);
     color: var(--text);
     border: 2px solid var(--border);
@@ -495,4 +497,26 @@ a.contact-btn {
     grid-template-columns: 1fr;
     grid-gap: 1rem;
   }
+}
+
+@media  (max-width: 600px) {
+    .modal-content {
+        width: 95%;
+        max-width: none;
+        padding: 1rem;
+    }
+    .modal-image {
+        width: 100%;
+        height: auto;
+        max-height: 30vh;
+        object-fit: contain;
+        margin-bottom: 0.75rem;
+    }
+    .modal-close {
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 1rem
+    }
 }
