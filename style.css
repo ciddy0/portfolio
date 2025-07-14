@@ -499,14 +499,14 @@ a.contact-btn {
   }
 }
 
-@media  (max-width: 600px) {
+@media (max-width: 600px) {
     .modal-content {
         width: 95%;
         max-width: none;
         padding: 1rem;
     }
     .modal-image {
-        width: 100%;
+        width: 90%;
         height: auto;
         max-height: 30vh;
         object-fit: contain;
@@ -517,6 +517,6 @@ a.contact-btn {
         right: 0.5rem;
         width: 1.8rem;
         height: 1.8rem;
-        font-size: 1rem
+        font-size: 1rem;
     }
 }

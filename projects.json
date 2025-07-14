@@ -22,7 +22,7 @@
   {
     "title": "Casino Render",
     "description": "Uses computer graphics techniques to render a casino and add physics to dice",
-    "extendedDescription": "Leveraging a fully modern OpenGL 3.3+ pipeline, this project builds every mesh with VAOs and VBOs and drives the GPU through custom GLSL shaders to deliver both Phong‐based dynamic lighting and high-quality texture mapping. It integrates Assimp to import a variety of 3D assets (GLTF, OBJ, etc.), making it easy to drop in new models. Includes hierarchical animations and bezier animations. As well as simple physics for the dice. You can fly throug the environment with W/A/S/D and arrow-key camera controls, and every action is punctuated by SFML Audio cues",
+    "extendedDescription": "Leveraging a fully modern OpenGL 3.3+ pipeline, this project builds every mesh with VAOs and VBOs and drives the GPU through custom GLSL shaders to deliver both Phong‐based dynamic lighting and high-quality texture mapping. Includes hierarchical animations and bezier animations. As well as simple physics for the dice. You can fly through the environment, and every action is punctuated by SFML Audio cues",
     "technologies":["C++"],
     "tags": ["C++", "OpenGL", "OOP", "Graphics", "GLSL", "SFML"],
     "image": "assets/casino-render.png",
