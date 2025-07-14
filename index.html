@@ -60,6 +60,17 @@
             <label><input type="checkbox" value="Java"/> Java</label>
         </div>
         <div class="project-list" id="project-list"></div>
+        <!-- Project Detail Modal -->
+        <div id="project-modal" class="modal hidden" aria-hidden="true">
+            <div class="modal-content">
+                <button id="modal-close" class="modal-close" aria-label="Close">&times;</button>
+                <img id="modal-img" src="" alt="" class="modal-image"/>
+                <b><h4 id="modal-title"></h4></b>
+                <p id="modal-desc"></p>
+                <div id="modal-tags" class="modal-tags"></div>
+                <button id="modal-view" class="view-btn">View Project</button>
+            </div>
+        </div>
     </section>
     
     <section id="skills" class="centered">

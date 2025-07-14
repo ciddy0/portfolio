@@ -1,16 +1,20 @@
 [
   {
     "title": "Chess",
-    "description": "A chess application using Avalonia where the user can play against an AI",
+    "description": "A chess application using where the user can play against an AI",
+    "extendedDescription": "The chess engine was coded in C# using the .NET framework and the UI was coded using Avalonia. The AI uses a minimax algorithm to determine its best move",
     "technologies": ["C#"],
+    "tags": ["C#", "Avalonia", ".NET", "AI", "OOP"],
     "image": "assets/chess.png",
     "date": "2025-04-15",
     "link": "https://github.com/ciddy0/Chess-In-Csharp"
   },
   {
     "title": "Club World Cup Data Lake",
-    "description": "A data pipeline for the Fifa Club World Cup 2025. Used Apache airflow to schedule task for extracting, transforming and loading the data",
+    "description": "A data pipeline for the Fifa Club World Cup 2025. Used Apache airflow to perform ETL on the JSON from ESPN API",
+    "extendedDescription": "Architected a Dockerized data ingestion pipeline using Apache Airflow for daily fetching of 2025 Club World Cup match and player data in python. Integrated with the ESPN public API to pull real-time match details, player stats, and team information. Developed a Streamlit application",
     "technologies": ["Python"],
+    "tags": ["Python", "Apache Airflow", "PostgreSQL", "ETL", "Data Pipline" ,"Data Analysis", "Data Visualization", "SQL", "Docker"],
     "image": "assets/cwc.png",
     "date": "2025-06-25",
     "link": "https://cwc-dashboard.streamlit.app/"
@@ -18,7 +22,9 @@
   {
     "title": "Casino Render",
     "description": "Uses computer graphics techniques to render a casino and add physics to dice",
-    "technologies": ["C++"],
+    "extendedDescription": "Leveraging a fully modern OpenGL 3.3+ pipeline, this project builds every mesh with VAOs and VBOs and drives the GPU through custom GLSL shaders to deliver both Phong‐based dynamic lighting and high-quality texture mapping. It integrates Assimp to import a variety of 3D assets (GLTF, OBJ, etc.), making it easy to drop in new models. Includes hierarchical animations and bezier animations. As well as simple physics for the dice. You can fly throug the environment with W/A/S/D and arrow-key camera controls, and every action is punctuated by SFML Audio cues",
+    "technologies":["C++"],
+    "tags": ["C++", "OpenGL", "OOP", "Graphics", "GLSL", "SFML"],
     "image": "assets/casino-render.png",
     "date": "2025-05-12",
     "link": "https://github.com/ciddy0/casino-render"
@@ -26,7 +32,9 @@
   {
     "title": "BRFSS Data Analysis",
     "description": "Performed ETL on a 104,000-record dataset using Python, Pandas, Scikit-learn, and Matplotlib to find patterns",
+    "extendedDescription": "We transformed state‐level obesity, activity, and nutrition data into time‐series vectors and then applied K-Means (k=5 via the Elbow Method) and Agglomerative Hierarchical clustering to group U.S. regions. Each behavior yielded five clusters, summarized by their median trend lines—that clearly distinguish regions improving, plateauing, or declining over time.",
     "technologies": ["Python"],
+    "tags": ["Python", "ETL", "K-Means", "Pandas", "Scikit-learn", "Matplotlib"],
     "image": "assets/brfss.png",
     "date": "2025-03-01",
     "link": "https://github.com/ciddy0/datathon-unsupervised"
@@ -34,7 +42,9 @@
   {
     "title": "Khrave",
     "description": "A full-stack web app to share and discover unique custom food orders",
+    "extendedDescription": "Khrave is full-stack web app built using React, Next.js, Tailwind CSS and shadcn/ui for the front end and Node.js, PostgreSQL, and Prisma for the backend. Users are able to sign up and log in securely, post and share their custom orders from various food chains.",
     "technologies": ["Javascript"],
+    "tags": ["Javascript", "PostgreSQL", "Database", "TailwindCSS", "Next.js", "React", "Prisma"],
     "image": "assets/khrave.png",
     "date": "2024-10-20",
     "link": "https://github.com/angietea101/khrave-1.0"
@@ -42,7 +52,9 @@
   {
     "title": "Anime Recommender",
     "description": "A webapp to recommend users anime using machine learning",
+    "extendedDescription":"Drawing on collaborative filtering and modern deep-learning tools, this web app delivers personalized anime suggestions. Trained a PyTorch matrix-factorization model on Kaggle’s anime rating datasets, learning latent user and item embeddings that predict user preferences. Those anime embeddings are then grouped with K-Means into genre and style-informed clusters",
     "technologies": ["Python", "Javascript"],
+    "tags": ["Python", "ETL", "AI", "K-Means", "Pytorch"],
     "image": "assets/anime-recommender.png",
     "date": "2024-09-01",
     "link": "https://cidsrecommender.netlify.app/"
@@ -50,7 +62,9 @@
   {
     "title": "Beach Buddy",
     "description": "A discord bot to notify users of University course registration updates",
+    "extendedDescription": "Python Discord bot that displays CSULB course information. Get notifications when seats & sections open. The data displayed by the bot updates every morning at 5:03 AM - 5:04 AM. This is when the CSULB schedule of classes updates.",
     "technologies": ["Python"],
+    "tags": ["Python", "ETL", "Webscraping"],
     "image": "assets/beach-buddy.png",
     "date": "2024-05-01",
     "link": "https://github.com/angietea101/Beach-Buddy"
@@ -58,7 +72,9 @@
   {
     "title": "Wild Rift Bot",
     "description": "A discord bot to allow users to search for in-game stats and info",
+    "extendedDescription": "Player stat data is scraped from wildstats.gg and then provides the user with their real time player stats via Discord. Users are able to get stats from their last 10 recent games and see their win rate with a doughnut graph. Users are also able to search for recommended champion builds.",
     "technologies": ["Java"],
+    "tags": ["Java", "Webscraping", "Data Visualization"],
     "image": "assets/wildrift-bot.png",
     "date": "2022-12-01",
     "link": "https://github.com/ciddy0/WildRift-Bot"
