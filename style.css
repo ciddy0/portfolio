@@ -7,13 +7,6 @@
     --input-bg: #aaa;
     --placeholder: #333;
 }
-body {
-    font-family: 'JetBrains Mono', monospace;
-    margin: 0;
-    padding: 0;
-    background: var(--bg);
-    color: var(--text);
-}
 body.dark-mode {
   --bg:          #000;
   --text:        #fff;
@@ -22,6 +15,13 @@ body.dark-mode {
   --shadow:      #fff;
   --input-bg:    #333;
   --placeholder: #aaa;
+}
+body {
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
 }
 nav {
     position: sticky;
@@ -52,7 +52,6 @@ nav {
     height: 3rem;
     object-fit: contain;
 }
-
 nav ul {
     padding-left: 5rem;
     padding-right: 5rem;
@@ -78,7 +77,6 @@ nav ul li {
     overflow: hidden;
     z-index: 0;
 }
-
 .nav-link::before{
     content: '';
     position: absolute;
@@ -98,7 +96,6 @@ nav ul li {
 .nav-link:hover {
     color: var(--bg);
 }
-
 .contact-btn {
     border: .2rem solid var(--border);
     border-radius: 10px;
@@ -114,24 +111,20 @@ a.contact-btn {
   color: var(--border);
   text-decoration: none;
 }
-
 .contact-btn:hover {
     background: var(--border);
     color: var(--bg);
 }
-
 .centered {
     text-align: center;
     padding: 40px 20px;
 }
-
 .avatar {
     width: 300px;
     border-radius: 50%;
     margin-bottom: 20px;
     border: 3px solid var(--border);
 }
-
 #projects {
     display: flex;
     padding: 40px;
@@ -178,6 +171,7 @@ a.contact-btn {
     background: var(--card-bg);
     box-shadow: 4px 4px 0 var(--shadow);
     transition: transform 0.2s ease;
+    cursor: pointer;
 }
 .project-card .project-link {
   display: block;
