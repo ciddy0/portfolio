@@ -18,13 +18,13 @@ https://ciddy.us/
 
 ## Features
 
-- 🌓 **Dark Mode Toggle** — Switch between light and dark themes by clicking the logo.
-- 📱 **Responsive Design** — Mobile menu and layout adjustments for all screen sizes.
-- 🗂️ **Project Filtering** — Filter projects by language or recency.
-- 📜 **Project Modal View** — Clickable project cards show detailed descriptions and tags.
-- 📧 **Contact Form** — Netlify-ready contact form with built-in validation.
+- **Dark Mode Toggle** — Switch between light and dark themes by clicking the logo.
+- **Responsive Design** — Mobile menu and layout adjustments for all screen sizes.
+- **Project Filtering** — Filter projects by language or recency.
+- **Project Modal View** — Clickable project cards show detailed descriptions and tags.
+- **Contact Form** — Netlify-ready contact form with built-in validation.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Languages**: HTML5, CSS3 (custom properties), JavaScript (ES6+)
 - **Frameworks**: None (Vanilla JS + CSS)
@@ -33,7 +33,7 @@ https://ciddy.us/
   - Google Fonts (JetBrains Mono)
   - LocalStorage (dark mode persistence)
 
-## 📸 Sample Projects Included
+## Sample Projects Included
 
 - Chess AI in C# with Avalonia UI
 - Club World Cup Data Pipeline using Apache Airflow and Streamlit
