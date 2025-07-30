@@ -6,6 +6,9 @@ on:
       - main
     paths:
       - 'index.html'
+      - 'projects.json'
+      - 'script.js'
+      - 'style.css'
 
 jobs:
   deploy:
