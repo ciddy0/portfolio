@@ -1,0 +1,17 @@
+name: Deploy to Netlify on index.html Change
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'index.html'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Netlify Deployment
+        run: |
+          curl -X POST "${{ secrets.NETLIFY_BUILD_HOOK }}"
