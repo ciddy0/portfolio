@@ -14,4 +14,4 @@ jobs:
     steps:
       - name: Trigger Netlify Deployment
         run: |
-          curl -X POST "${{ secrets.NETLIFY_BUILD_HOOK }}"
+          curl -X POST "${{ secrets.NETLIFY}}"
