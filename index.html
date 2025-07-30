@@ -1,145 +1,194 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Diego Cid Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <nav>
-        <button id="hamburger-btn" class="hamburger" aria-label="Toggle menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-        <ul>
-            <li class="logo-item"><a><img id="logo" src="assets/black-kitty.png" src="assets/kitty-black.png"
-                data-light-src="assets/black-kitty.png"
-                data-dark-src="assets/white-kitty.png" alt="logo" class="logo-box logo-img"/></a></li>
-            <li><a href="#about"   class="nav-link">About me</a></li>
-            <li><a href="#projects"class="nav-link">Projects</a></li>
-            <li><a href="#skills"  class="nav-link">Skills</a></li>
-            <li><a href="#contact" class="contact-btn">Contact me</a></li>
-        </ul>
+      <button id="hamburger-btn" class="hamburger" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul>
+        <li class="logo-item">
+          <a
+            ><img
+              id="logo"
+              src="assets/black-kitty.png"
+              src="assets/kitty-black.png"
+              data-light-src="assets/black-kitty.png"
+              data-dark-src="assets/white-kitty.png"
+              alt="logo"
+              class="logo-box logo-img"
+          /></a>
+        </li>
+        <li><a href="#about" class="nav-link">About me</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="contact-btn">Contact me</a></li>
+      </ul>
     </nav>
     <!-- My HAMBURGER MENU HEHE-->
-     <div id="mobile-menu" class="mobile-menu">
-        <div class="mobile-menu-header">
-            <button id="close-btn" class="close-btn" aria-label="Close menu">&times;</button>
-            <div class="logo-box">
-                <img id="mobile-logo" 
-                class="logo-img"
-                src="assets/black-kitty.png"
-                data-light-src="assets/black-kitty.png"
-                data-dark-src="assets/white-kitty.png" alt="logo"/>
-            </div>        </div>
-        <ul class="mobile-menu-nav">
-            <li><a href="#about" class="nav-link">About me</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#skills" class="nav-link">Skills</a></li>
-        </ul>
-        <div class="contact-mobile">
-            <a href="#contact" class="contact-btn">Contact me</a>
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mobile-menu-header">
+        <button id="close-btn" class="close-btn" aria-label="Close menu">
+          &times;
+        </button>
+        <div class="logo-box">
+          <img
+            id="mobile-logo"
+            class="logo-img"
+            src="assets/black-kitty.png"
+            data-light-src="assets/black-kitty.png"
+            data-dark-src="assets/white-kitty.png"
+            alt="logo"
+          />
         </div>
-     </div>
+      </div>
+      <ul class="mobile-menu-nav">
+        <li><a href="#about" class="nav-link">About me</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+      </ul>
+      <div class="contact-mobile">
+        <a href="#contact" class="contact-btn">Contact me</a>
+      </div>
+    </div>
     <section id="about" class="centered">
-        <img src="assets/chopper_sitting.jpg" alt="profile" class="avatar"/>
-        <h2>Diego Cid, Computer Science Senior @<br/>California State University Long Beach</h2>
+      <img src="assets/chopper_sitting.jpg" alt="profile" class="avatar" />
+      <h2>
+        Diego Cid, Computer Science Senior @<br />California State University
+        Long Beach
+      </h2>
     </section>
 
     <section id="projects">
-        <div class="filters">
-            <h3>Filters</h3>
-            <label><input type="checkbox" value="Recent"/> Recent</label>
-            <label><input type="checkbox" value="Python"/> Python</label>
-            <label><input type="checkbox" value="C#"/> C#</label>
-            <label><input type="checkbox" value="C++"/> C++</label>
-            <label><input type="checkbox" value="Javascript"/> Javascript</label>
-            <label><input type="checkbox" value="Java"/> Java</label>
+      <div class="filters">
+        <h3>Filters</h3>
+        <label><input type="checkbox" value="Recent" /> Recent</label>
+        <label><input type="checkbox" value="Python" /> Python</label>
+        <label><input type="checkbox" value="C#" /> C#</label>
+        <label><input type="checkbox" value="C++" /> C++</label>
+        <label><input type="checkbox" value="Javascript" /> Javascript</label>
+        <label><input type="checkbox" value="Java" /> Java</label>
+      </div>
+      <div class="project-list" id="project-list"></div>
+      <!-- Project Detail Modal -->
+      <div id="project-modal" class="modal hidden" aria-hidden="true">
+        <div class="modal-content">
+          <button id="modal-close" class="modal-close" aria-label="Close">
+            &times;
+          </button>
+          <img id="modal-img" src="" alt="" class="modal-image" />
+          <b><h4 id="modal-title"></h4></b>
+          <p id="modal-desc"></p>
+          <div id="modal-tags" class="modal-tags"></div>
+          <button id="modal-view" class="view-btn">View Project</button>
         </div>
-        <div class="project-list" id="project-list"></div>
-        <!-- Project Detail Modal -->
-        <div id="project-modal" class="modal hidden" aria-hidden="true">
-            <div class="modal-content">
-                <button id="modal-close" class="modal-close" aria-label="Close">&times;</button>
-                <img id="modal-img" src="" alt="" class="modal-image"/>
-                <b><h4 id="modal-title"></h4></b>
-                <p id="modal-desc"></p>
-                <div id="modal-tags" class="modal-tags"></div>
-                <button id="modal-view" class="view-btn">View Project</button>
-            </div>
-        </div>
+      </div>
     </section>
-    
+
     <section id="skills" class="centered">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-item">
-                <img src="assets/python-logo.png" alt="Python" class="skill-icon"/>
-                <span class="skill-name">Python</span>
-            </div>
-            <div class="skill-item">
-                <img src="assets/csharp-logo.png" alt="C#" class="skill-icon"/>
-                <span class="skill-name">C#</span>
-            </div>
-            <div class="skill-item">
-                <img src="assets/c++-logo.png" alt="C++" class="skill-icon"/>
-                <span class="skill-name">C++</span>
-            </div>
-            <div class="skill-item">
-                <img src="assets/javascript-logo.png" alt="JavaScript" class="skill-icon"/>
-                <span class="skill-name">JavaScript</span>
-            </div>
-            <div class="skill-item">
-                <img src="assets/java-logo.png" alt="Java" class="skill-icon"/>
-                <span class="skill-name">Java</span>
-            </div>
-            <div class="skill-item">
-                <img src="assets/apache-airflow.png" alt="Apache Airflow" class="skill-icon"/>
-                <span class="skill-name">Apache Airflow</span>
-            </div>
-            <div class="skill-item">
-                <img src="assets/streamlit-logo.png" alt="Streamlit" class="skill-icon"/>
-                <span class="skill-name">Streamlit</span>
-            </div>
-            <div class="skill-item">
-                <img src="assets/git-logo.png" alt="Git" class="skill-icon"/>
-                <span class="skill-name">Git</span>
-            </div>
-            <div class="skill-item">
-                <img src="assets/postgreSQL-logo.png" alt="PostgreSQL" class="skill-icon"/>
-                <span class="skill-name">PostgreSQL</span>
-            </div>
-            <div class="skill-item">
-                <img src="assets/mongoDB-logo.png" alt="MongoDB" class="skill-icon"/>
-                <span class="skill-name">MongoDB</span>
-            </div>
-            <div class="skill-item">
-                <img src="assets/docker-logo.png" alt="Docker" class="skill-icon"/>
-                <span class="skill-name">Docker</span>
-            </div>
-            <div class="skill-item">
-                <img src="assets/prisma-icon.png" alt="Prisma" class="skill-icon"/>
-                <span class="skill-name">Prisma</span>
-            </div>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <img src="assets/python-logo.png" alt="Python" class="skill-icon" />
+          <span class="skill-name">Python</span>
         </div>
+        <div class="skill-item">
+          <img src="assets/csharp-logo.png" alt="C#" class="skill-icon" />
+          <span class="skill-name">C#</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/c++-logo.png" alt="C++" class="skill-icon" />
+          <span class="skill-name">C++</span>
+        </div>
+        <div class="skill-item">
+          <img
+            src="assets/javascript-logo.png"
+            alt="JavaScript"
+            class="skill-icon"
+          />
+          <span class="skill-name">JavaScript</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/java-logo.png" alt="Java" class="skill-icon" />
+          <span class="skill-name">Java</span>
+        </div>
+        <div class="skill-item">
+          <img
+            src="assets/apache-airflow.png"
+            alt="Apache Airflow"
+            class="skill-icon"
+          />
+          <span class="skill-name">Apache Airflow</span>
+        </div>
+        <div class="skill-item">
+          <img
+            src="assets/streamlit-logo.png"
+            alt="Streamlit"
+            class="skill-icon"
+          />
+          <span class="skill-name">Streamlit</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/git-logo.png" alt="Git" class="skill-icon" />
+          <span class="skill-name">Git</span>
+        </div>
+        <div class="skill-item">
+          <img
+            src="assets/postgreSQL-logo.png"
+            alt="PostgreSQL"
+            class="skill-icon"
+          />
+          <span class="skill-name">PostgreSQL</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/mongoDB-logo.png" alt="MongoDB" class="skill-icon" />
+          <span class="skill-name">MongoDB</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/docker-logo.png" alt="Docker" class="skill-icon" />
+          <span class="skill-name">Docker</span>
+        </div>
+        <div class="skill-item">
+          <img src="assets/prisma-icon.png" alt="Prisma" class="skill-icon" />
+          <span class="skill-name">Prisma</span>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="centered">
-        <h2>Contact me</h2>
-        <p>Please fill out the form to get in touch with me</p>
-        <form method="POST" class="contact-form" netlify>
-            <div class="form-row">
-            <input type="text" name="firstName" placeholder="First name" required />
-            <input type="text" name="lastName" placeholder="Last name" required />
-            </div>
-            <input type="email" name="email" placeholder="Email address" required />
-            <textarea name="message" placeholder="Message" rows="6" required></textarea>
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
+      <h2>Contact me</h2>
+      <p>Please fill out the form to get in touch with me</p>
+      <form method="POST" class="contact-form" netlify>
+        <div class="form-row">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First name"
+            required
+          />
+          <input type="text" name="lastName" placeholder="Last name" required />
+        </div>
+        <input type="email" name="email" placeholder="Email address" required />
+        <textarea
+          name="message"
+          placeholder="Message"
+          rows="6"
+          required
+        ></textarea>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
     </section>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
