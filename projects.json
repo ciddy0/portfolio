@@ -31,10 +31,10 @@
   },
   {
     "title": "BRFSS Data Analysis",
-    "description": "Performed ETL on a 104,000-record dataset using Python, Pandas, Scikit-learn, and Matplotlib to find patterns",
+    "description": "Performed data analysis on a 104,000-record dataset using Python, Pandas, Scikit-learn, and Matplotlib to find patterns",
     "extendedDescription": "We transformed state‐level obesity, activity, and nutrition data into time‐series vectors and then applied K-Means (k=5 via the Elbow Method) and Agglomerative Hierarchical clustering to group U.S. regions. Each behavior yielded five clusters, summarized by their median trend lines—that clearly distinguish regions improving, plateauing, or declining over time.",
     "technologies": ["Python"],
-    "tags": ["Python", "ETL", "K-Means", "Pandas", "Scikit-learn", "Matplotlib"],
+    "tags": ["Python", "K-Means", "Pandas", "Scikit-learn", "Matplotlib"],
     "image": "assets/brfss.png",
     "date": "2025-03-01",
     "link": "https://github.com/ciddy0/datathon-unsupervised"
@@ -54,7 +54,7 @@
     "description": "A webapp to recommend users anime using machine learning",
     "extendedDescription":"Drawing on collaborative filtering and modern deep-learning tools, this web app delivers personalized anime suggestions. Trained a PyTorch matrix-factorization model on Kaggle’s anime rating datasets, learning latent user and item embeddings that predict user preferences. Those anime embeddings are then grouped with K-Means into genre and style-informed clusters",
     "technologies": ["Python", "Javascript"],
-    "tags": ["Python", "ETL", "AI", "K-Means", "Pytorch"],
+    "tags": ["Python", "AI", "K-Means", "Pytorch"],
     "image": "assets/anime-recommender.png",
     "date": "2024-09-01",
     "link": "https://cidsrecommender.netlify.app/"
