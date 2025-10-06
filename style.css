@@ -196,6 +196,24 @@ a.contact-btn {
   object-fit: cover;
   margin-bottom: 10px;
 }
+.resume-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 20px;
+  border: 0.15rem solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text);
+  text-decoration: none;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+  background: var(--border);
+  color: var(--bg);
+}
 .modal {
   position: fixed;
   inset: 0;
